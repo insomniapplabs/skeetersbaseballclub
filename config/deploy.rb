@@ -25,6 +25,9 @@
 # end
 
 require "bundler/capistrano"
+require 'rvm/capistrano'
+set :rvm_ruby_string, 'ruby-2.0.0-p247' # Change to your ruby version
+set :rvm_type, :system # :user if RVM installed in $HOME
 
 server "162.243.63.93", :web, :app, :db, primary: true
 

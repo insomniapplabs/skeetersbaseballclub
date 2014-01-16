@@ -39,7 +39,7 @@ end
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-gem 'capistrano'
+#gem 'capistrano'
 gem 'unicorn'
 
 # Use debugger
@@ -53,3 +53,4 @@ gem 'carrierwave'
 gem 'rmagick'
 gem 'redcarpet'
 gem 'friendly_id', '~> 5.0.0'
+gem 'rvm-capistrano'
