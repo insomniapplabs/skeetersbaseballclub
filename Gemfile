@@ -39,7 +39,7 @@ end
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-gem 'capistrano'
+gem 'capistrano', '~> 3.1.0'
 gem 'unicorn'
 
 # Use debugger
