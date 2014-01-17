@@ -58,5 +58,5 @@ production:
   encoding: unicode
   database: skeetersbaseballclub_production
   pool: 5
-  username: skeetersbaseballclub
+  username: admin
   password:
