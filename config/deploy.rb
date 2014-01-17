@@ -1,4 +1,4 @@
-/#set :application, "set your application name here"
+#set :application, "set your application name here"
 #set :repository,  "set your repository location here"
 
 # set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
@@ -57,7 +57,7 @@ namespace :deploy do
       CMD
     end
   end
-  
+
   %w[start stop restart].each do |command|
     desc "#{command} unicorn server"
     task command, roles: :app, except: {no_release: true} do
