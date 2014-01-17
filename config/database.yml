@@ -58,5 +58,6 @@ production:
   encoding: unicode
   database: skeetersbaseballclub_production
   pool: 5
+  changetra
   username: admin
   password:
