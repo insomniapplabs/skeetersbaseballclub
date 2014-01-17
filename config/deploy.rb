@@ -1,4 +1,4 @@
-#set :application, "set your application name here"
+/#set :application, "set your application name here"
 #set :repository,  "set your repository location here"
 
 # set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
@@ -49,6 +49,15 @@ ssh_options[:forward_agent] = true
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
 
 namespace :deploy do
+  namespace :assets do
+    task :precompile, :roles => assets_role, :except => { :no_release => true } do
+      run <<-CMD.compact
+        cd -- #{latest_release.shellescape} &&
+        #{rake} RAILS_ENV=#{rails_env.to_s.shellescape} #{asset_env} assets:precompile
+      CMD
+    end
+  end
+  
   %w[start stop restart].each do |command|
     desc "#{command} unicorn server"
     task command, roles: :app, except: {no_release: true} do
