@@ -16,7 +16,12 @@ body { background-color:#F5F5F5; }
 
 /* DEDICATED LOGIN PAGE */
 .login-pg-text { font-family: 'Sonsie One', cursive;color:#111;font-size:5.0em;text-align:center;margin-bottom:60px;margin-top:50px;text-shadow: 0px 1px 1px #444; }
-.login-form-box { margin:0 auto;padding-top:30px;margin-bottom:30px; }
+
+.landing-page-top { background:#242628;padding-top:25px;padding-bottom:35px;}
+h1.landing-page { font-family: 'Sonsie One', cursive;color:#111;font-size:4.0em;text-align:center;margin-bottom:30px;margin-top:30px;text-shadow: 0px 1px 1px #444; }
+h3.member-login-text { font-size:2.0em;color:#111;text-shadow: 0px 1px 1px #444;font-weight:bold; }
+
+.login-form-box { margin:0 auto;padding-top:10px;margin-bottom:30px; }
 .login-form-box p { color:#666;margin-top:15px; }
 input#dark-input:not([type=submit]):not([type=file]) {
    background:#333333;border-color:#333333;color:#ddd;box-shadow:none; }

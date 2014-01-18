@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
 
-  before_filter :authenticate_user!, except: [:home]
+  #before_filter :authenticate_user!, except: [:home]
 
 	def team_portal
     @teams = Team.order("name asc")
@@ -18,6 +18,10 @@ class PagesController < ApplicationController
   end
 
   def team_info
+
+  end
+
+  def home_alt
 
   end
 

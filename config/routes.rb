@@ -17,7 +17,8 @@ Skeetersbaseballclub::Application.routes.draw do
 
 
   get "team-info" => 'pages#team_info', as: "info"
-
+  get "pages/home"
+  get "pages/home_alt"
   get "member/dashboard"
   get "admin/dashboard"
   get "admin/schedule"
@@ -41,7 +42,7 @@ Skeetersbaseballclub::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'pages#home'
+  root 'pages#home_alt'
 
 
   # Example of regular route:
