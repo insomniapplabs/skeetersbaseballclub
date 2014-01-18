@@ -28,6 +28,7 @@ ready = ->
 	resize()
 	window.onresize = ->
   	resize()
+  	
 
 
   $("#myTabs a").click (e) ->
