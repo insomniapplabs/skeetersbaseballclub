@@ -9,6 +9,8 @@ class EventsController < ApplicationController
 		@event = @team.events.create(event_params)
 		if @event.save
 			redirect_to team_path(@team)
+		else
+			redirect_to team_path(@team)
 		end
 	end
 

@@ -10,11 +10,11 @@ class PagesController < ApplicationController
   def home
   	@users = User.order('created_at DESC')
     @public_posts = Post.order("created_at desc").where("private = ?", false)
-    @header_team_list = Team.order('name asc')
+    
   end
 
   def sponsors
-  
+   
   end
 
   def team_info
@@ -22,7 +22,7 @@ class PagesController < ApplicationController
   end
 
   def home_alt
-
+    @header_team_list = Team.order('name asc')
   end
 
   def main
@@ -33,15 +33,9 @@ class PagesController < ApplicationController
   end
 
   def dashboard
-    if user_signed_in?
-      @post = current_user.posts.build
-      @posts = Post.order("publish_on DESC")
-      @dashboard_event_list = Event.order("date asc")
-      
-      @admin_users = User.where('admin = ?', true)
-      @current_users = User.where("admin = ?", false)
-      @super_user = User.where("super_admin = ?", true)
-    end
+    @users = User.order('created_at DESC')
+    @public_posts = Post.order("created_at desc").where("private = ?", false)
+    @header_team_list = Team.order('name asc')
   end
 
   def sample

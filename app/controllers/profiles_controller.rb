@@ -9,11 +9,14 @@ class ProfilesController < ApplicationController
 		@profile = @team.profiles.create(profile_params)
 		if @profile.save
 			redirect_to team_path(@team)
+		else
+			redirect_to team_path(@team)
 		end
 	end
 
 	def show
-		@profile = Profile.find(params[:id])
+		@team = Team.friendly.find(params[:team_id])
+		@profile = @team.profiles.find(params[:id])
 		respond_to do |format|
 			format.html
 			format.js

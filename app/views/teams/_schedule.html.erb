@@ -62,7 +62,7 @@
 			<div class="add-game-container">
 				<h2 class="schedule-container-title">Add Game <span class="cancel" id="cancel-game-btn">Cancel</span></h2>
 				<div class="add-game-form">
-					<%= form_for([@team, Event.new]) do |f| %>
+					<%= form_for([@team, Event.new], html: { id: "new-game-f"}) do |f| %>
 					<%= f.hidden_field :event_type, value: "game" %>
 					<div class="form-group">
 						<label class="sr-only">Date</label>
@@ -93,7 +93,7 @@
 					</div>
 					<div class="form-group">
 						<label class="sr-only">Game Type</label>
-						<%= f.text_field :game_type, placeholder: "Select game type", class: "form-control" %>
+						<%= f.select :game_type, options_for_select(["Scrimmage", "Tournament", "Regular Season"]), {prompt: "Select game type"}, class: "form-control" %>
 					</div>
 					<div class="form-group">
 						<label class="sr-only">Location</label>
@@ -113,7 +113,7 @@
 			<div class="add-practice-container">
 				<h2 class="schedule-container-title">Add Practice<span class="cancel" id="cancel-practice-btn">Cancel</span></h2>
 				<div class="add-practice-form">
-					<%= form_for([@team, Event.new]) do |f| %>
+					<%= form_for([@team, Event.new], html: {id: "new-practice-f"}) do |f| %>
 					<%= f.hidden_field :event_type, value: "practice" %>
 						<div class="form-group">
 							<label class="sr-only">Date</label>

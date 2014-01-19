@@ -1,3 +1,15 @@
+<% if user_signed_in? %>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="dashboard-header">
+				<%= render 'partials/admin_dashboard_header' %>
+			</div>
+		</div>
+	</div>
+</div>
+<% else %>
+
 <div id="portal-wrap">
 
 <div class="landing-page-top">
@@ -32,3 +44,6 @@
 </div>
 
 </div>
+
+
+<% end %>

@@ -33,7 +33,7 @@ Skeetersbaseballclub::Application.routes.draw do
 
   resources :users
   get "sample" => "pages#sample"
-  get "dashboard" => "pages#dashboard"
+  get "dashboard" => "pages#dashboard", as: "dashboard"
   get "roster" => "pages#roster"
   get "schedule" => "pages#schedule"
   get "pages/home"

@@ -1,7 +1,10 @@
 body, html { height:100%; }
 
-body { background-color:#F5F5F5; }
-.page-wrap { background:white;padding:20px 40px;border:1px solid #ddd; }
+body { background-color:#242628; }
+/*body { background:url('black_twill.png') repeat; }*/
+
+
+.page-wrap { background:#fff;padding:20px 40px;border:1px solid #ddd; }
 
 #portal-wrap { background:#242628;padding-top:30px; }
 #password-wrap { background:#242628; }
@@ -23,7 +26,11 @@ h3.member-login-text { font-size:2.0em;color:#111;text-shadow: 0px 1px 1px #444;
 .new-password-container { padding-top:30px;margin: 0 auto;}
 h2.forgot-it { padding-top:20px; padding-bottom:20px;font-size:3.0em;color:#111;text-shadow: 0px 1px 1px #444;font-weight:bold;}
 
-
+.shadow {
+  -moz-box-shadow:    3px 3px 23px 6px #000;
+  -webkit-box-shadow: 3px 3px 23px 6px #000;
+  box-shadow:         3px 3px 23px 6px #000;
+}
 
 
 
@@ -50,10 +57,20 @@ input#dark-input:not([type=submit]):not([type=file]) {
 .player-number h1 { text-align:center;margin-top:0; }
 
 
-.schedule-container { padding-top:20px;min-height:500px; }
+
+
+.roster-container { background:#fff;padding:20px;min-height:500px;border-left:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd; }
+
+.upcoming-events-container { background:#fff;padding:0px;padding-top:20px;min-height:500px;border-right:1px solid #ddd;border-left:1px solid #ddd;padding:20px;border-bottom:1px solid #DDDDDD; }
+
+.schedule-container { background:#fff;padding:20px;min-height:500px;border-left:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd; }
 .schedule-container-title { margin-bottom:10px;margin-top:0;}
 .schedule-an-event-container {  }
 .schedule-an-event-container p { margin-right:10px;float:left;}
+
+
+
+
 
 .send-invite-form { padding-top:20px;border-top:1px solid #ddd; }
 #send-invite-button { margin-top:5px;}
@@ -67,7 +84,13 @@ input#dark-input:not([type=submit]):not([type=file]) {
 
 .add-practice-form { border:1px solid #ddd;padding:20px; }
 
-.upcoming-events-container { padding:0px;padding-top:20px;min-height:500px; }
+
+
+
+
+
+
+
 
 .new-post-form { padding:20px 10px;border-bottom:1px solid #e1e1e1; }
 .new-post-link { text-align:center;background:#1071BE;color:#fff;cursor:pointer; }
@@ -110,11 +133,13 @@ h4.empty { margin-top:30px;margin-bottom:40px; }
 .light { font-weight:300; }
 .default-profile-image { width:100%; }
 .profile-container { padding:0 0 20px 0;}
-.roster-container { padding-top:20px;min-height:500px; }
+
+
 .roster-left-container { margin-right:30px; }
 
 .menu { padding-left:0;list-style:none;padding-top:10px; }
 .menu li { font-size:1.4em;line-height:1.5; }
+.create-profile-form { margin-bottom:30px;border-bottom:1px solid #ddd;padding-bottom:20px; }
 .create-profile-form h3 { margin-top:0;margin-bottom:15px; }
 
 .events-list-header-container { background:#EEEEEE;border-bottom:1px solid #CCCCCC;border-right:1px solid #CCCCCC;border-left:1px solid #CCCCCC;border-top:2px solid #CCCCCC;margin-top:10px; }

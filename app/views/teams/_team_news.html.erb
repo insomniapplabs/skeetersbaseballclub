@@ -16,9 +16,16 @@
 					<% if @dashboard_event_list.present? %>
 					<% for event in @dashboard_event_list %>
 					<tr>
+						<% if event.game_type.present? %>
+						<td>
+							<p class="no-btm"><strong><%= event.event_type.capitalize %></strong> (<%= event.game_type %>) at <%= event.location %></p>
+							
+						</td>
+						<% else %>
 						<td>
 							<p class="no-btm"><strong><%= event.event_type.capitalize %></strong> at <%= event.location %></p>
 						</td>
+						<% end %>
 						<td class="text-right">
 							<p class="no-btm silver"><%= event.date.strftime("%a, %b %-d") %> <%= event.start_time %> CST</p>
 						</td>
@@ -39,6 +46,10 @@
 					</div>
 				</div>
 			</div>
+
+
+			
+
 			<div class="new-post-form">
 				<%= form_for([@team, Post.new], html: {id: "new-post-f"})  do |f| %>
 				<div class="form-group">
@@ -69,6 +80,12 @@
 				</div>
 				<% end %>
 			</div>
+
+
+			<!-- FORM VALIDATIONS -->
+			
+
+
 			<% if @team.posts.present? %>
 			<div class="updates-container">
 				<% for post in @team.posts %>

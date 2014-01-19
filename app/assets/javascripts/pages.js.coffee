@@ -22,18 +22,15 @@ ready = ->
 		$(".send-invite-form").hide()
 		$("#send-invite-button").show()
 
-	resize = ->
-  	heights = window.innerHeight
-  	document.getElementById("portal-wrap").style.height = heights + "px"
-	resize()
-	window.onresize = ->
-  	resize()
+	
   	
 
 
   $("#myTabs a").click (e) ->
   	e.preventDefault
   	$(this).tab('show')
+
+ 
   
 
 $(document).ready(ready)

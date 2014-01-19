@@ -9,6 +9,8 @@ class PostsController < ApplicationController
 		@post = @team.posts.create(post_params)
 		if @post.save
 			redirect_to team_path(@team)
+		else
+			redirect_to team_path(@team)
 		end
 	end
 

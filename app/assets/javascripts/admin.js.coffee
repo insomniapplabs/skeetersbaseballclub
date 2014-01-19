@@ -49,13 +49,39 @@ ready = ->
 		$(".new-post-form").slideUp("fast")
 		$("#new-post-f").trigger("reset")
 
+	$('#cancel-game-btn').click (e) ->
+		e.preventDefault()
+		$(".add-game-container").slideUp("fast")
+		$("#new-game-f").trigger("reset")
+
+	$('#cancel-game-btn-btm').click (e) ->
+		e.preventDefault()
+		$(".add-game-container").slideUp("fast")
+		$("#new-game-f").trigger("reset")
+
+
+	$('#cancel-practice-btn').click (e) ->
+		e.preventDefault()
+		$(".add-practice-container").slideUp("fast")
+		$("#new-practice-f").trigger("reset")
+
+	$('#cancel-practice-btn-btm').click (e) ->
+		e.preventDefault()
+		$(".add-practice-container").slideUp("fast")
+		$("#new-practice-f").trigger("reset")
+
+
+	$('#cancel-profile-btn-btm').click (e) ->
+		e.preventDefault()
+		$('.create-profile-form').hide()
+		$("#new-profile-f").trigger("reset")
 
 
 	$('.create-profile-form').hide()
 	
 	$('#profile-form-trigger').click (e) ->
 		e.preventDefault()
-		$('.create-profile-form').slideToggle("fast")
+		$('.create-profile-form').slideDown("fast")
 
 
 

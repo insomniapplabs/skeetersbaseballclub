@@ -21,12 +21,13 @@ class TeamsController < ApplicationController
 
 	def show
 		@team = Team.find_by_slug(params[:id])
-		@dashboard_event_list = Event.order("date asc")
+		@dashboard_event_list = @team.events.order("date asc")
 		@admin_users = User.where('admin = ?', true)
     @current_users = User.where("admin = ?", false)
     @super_user = User.where("super_admin = ?", true)	
-    @event_list = Event.order("created_at asc")
-    @profile_list = Profile.order("player_number asc")
+    @event_list = @team.events.order("created_at asc")
+    @profile_list = @team.profiles.order("player_number asc")
+    @header_team_list = Team.order('name asc')
 	end
 
 	def destroy
