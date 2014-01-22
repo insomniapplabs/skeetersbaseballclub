@@ -6,7 +6,19 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
  
   <%= csrf_meta_tags %>
+  <!--<script>
+  $(function () {
+  	var $secondary = $(".secondary-top-container");
 
+  	var setSize = function () {
+  		windowHeight = $(window).height();
+  		$secondary.height(windowHeight);
+  	};
+  	setSize();
+
+  	$(window).resize(setSize);
+  });
+  </script> -->
 
 </head>
 <body>

@@ -22,16 +22,22 @@ ready = ->
 		$(".send-invite-form").hide()
 		$("#send-invite-button").show()
 
+
 	
-  	
+	
 
 
   $("#myTabs a").click (e) ->
   	e.preventDefault
   	$(this).tab('show')
 
- 
-  
+  $secondary = $(".secondary-top-container")
+	setSize = ->
+		windowHeight = $(window).height()
+		$secondary.height windowHeight
+
+	setSize()
+	$(window).resize setSize
 
 $(document).ready(ready)
 $(document).on('page:load', ready)

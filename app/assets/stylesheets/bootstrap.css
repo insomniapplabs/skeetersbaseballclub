@@ -4605,7 +4605,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
-  font-family: 'Sonsie One', cursive;
+  font-family: 'sonsie_oneregular', cursive;
 }
 
 .navbar-brand:hover,

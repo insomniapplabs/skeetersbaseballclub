@@ -52,8 +52,9 @@ h3.sponsor-heading { font-family: 'sonsie_oneregular', cursive;text-align:center
   box-shadow:         3px 3px 23px 6px #000;
 }
 
-.secondary-title { font-family: 'sonsie_oneregular', cursive; }
-
+.secondary-top-container { background:white;padding-bottom:300px; }
+.secondary-title { font-family: 'sonsie_oneregular', cursive;color:#1071BE;margin-top:50px;margin-bottom:30px;border-bottom:1px solid #ddd;padding-bottom:8px; }
+.secondary-text { color:#ddd;font-size:16px;line-height:1.3;color:#444; }
 
 .login-form-box { margin:0 auto;padding-top:10px;margin-bottom:30px; }
 .login-form-box p { color:#666;margin-top:15px; }
@@ -129,6 +130,7 @@ input#dark-input:not([type=submit]):not([type=file]) {
 .no-btm { margin-bottom:0;}
 
 .blue { color:#1071BE; }
+.strongblue { color:#1071BE;font-weight:bold;font-size:1.4em; }
 
 
 .dashboard-event-container { border-bottom:1px solid #ddd; }
