@@ -21,6 +21,10 @@ class PagesController < ApplicationController
 
   end
 
+  def team_philosophy
+
+  end
+
   def home_alt
     @header_team_list = Team.order('name asc')
   end

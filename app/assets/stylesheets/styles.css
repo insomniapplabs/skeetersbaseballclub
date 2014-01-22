@@ -1,12 +1,27 @@
+@font-face {
+    font-family: 'sonsie_oneregular';
+    src: url('sonsieone-regular-webfont.eot');
+    src: url('sonsieone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sonsieone-regular-webfont.woff') format('woff'),
+         url('sonsieone-regular-webfont.ttf') format('truetype'),
+         url('sonsieone-regular-webfont.svg#sonsie_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
 body, html { height:100%; }
 
-body { background-color:#242628; }
-/*body { background:url('black_twill.png') repeat; }*/
+body { background-color:#2f2f2f; } 
+/*body { background:url('dark_wood.png') repeat; }*/
 
 
 .page-wrap { background:#fff;padding:20px 40px;border:1px solid #ddd; }
 
-#portal-wrap { background:#242628;padding-top:30px; }
+/*#portal-wrap { background:#242628;padding-top:0px; } */
 #password-wrap { background:#242628; }
 /*body { background:#242628; } */
 /* body { background:#f5f5f5; } */
@@ -18,13 +33,18 @@ body { background-color:#242628; }
 .home-login-container { padding:15px;width:300px;background:#F8F8F8; }
 
 /* DEDICATED LOGIN PAGE */
-.login-pg-text { font-family: 'Sonsie One', cursive;color:#111;font-size:5.0em;text-align:center;margin-bottom:60px;margin-top:50px;text-shadow: 0px 1px 1px #444; }
+.login-pg-text { font-family: 'sonsie_oneregular', cursive;color:#111;font-size:5.0em;text-align:center;margin-bottom:60px;margin-top:50px;text-shadow: 0px 1px 1px #444; }
 
-.landing-page-top { background:#242628;padding-top:25px;padding-bottom:35px;}
-h1.landing-page { font-family: 'Sonsie One', cursive;color:#111;font-size:4.0em;text-align:center;margin-bottom:30px;margin-top:30px;text-shadow: 0px 1px 1px #444; }
+.landing-page-top { background:#2f2f2f;padding-top:0px;padding-bottom:50px;}
+h1.landing-page { font-family: 'sonsie_oneregular', cursive;color:#111;font-size:4.0em;text-align:center;margin-bottom:30px;margin-top:30px;text-shadow: 0px 1px 1px #555; }
 h3.member-login-text { font-size:2.0em;color:#111;text-shadow: 0px 1px 1px #444;font-weight:bold; }
 .new-password-container { padding-top:30px;margin: 0 auto;}
 h2.forgot-it { padding-top:20px; padding-bottom:20px;font-size:3.0em;color:#111;text-shadow: 0px 1px 1px #444;font-weight:bold;}
+.landing-page-sponsors { background:#ddd;min-height:200px;padding-bottom:30px;}
+
+
+h3.sponsor-heading { font-family: 'sonsie_oneregular', cursive;text-align:center;margin-top:30px;margin-bottom:30px; }
+.sponsor-img { border:3px solid #999;}
 
 .shadow {
   -moz-box-shadow:    3px 3px 23px 6px #000;
@@ -32,6 +52,7 @@ h2.forgot-it { padding-top:20px; padding-bottom:20px;font-size:3.0em;color:#111;
   box-shadow:         3px 3px 23px 6px #000;
 }
 
+.secondary-title { font-family: 'sonsie_oneregular', cursive; }
 
 
 .login-form-box { margin:0 auto;padding-top:10px;margin-bottom:30px; }
@@ -151,7 +172,7 @@ h4.table-header { margin:0;color:black; }
 tr.gray { background:#eee;/*border-left:1px solid #ccc;border-right:1px solid #ccc;*/border-top:1px solid #ccc; }
 
 /* LANDING PAGE */
-h3.welcome-title { margin-top:0;color:#eee;font-weight:100;letter-spacing:1px;border-bottom:1px solid #333;padding-bottom:8px; }
+h3.welcome-title { margin-top:0;color:#eee;font-weight:100;letter-spacing:1px;border-bottom:1px solid #555;padding-bottom:8px; }
 p.welcome-text { line-height:1.3;font-weight:300;color:#eee;letter-spacing:1px; }
 
 .sponsor-placeholder { background:#222;margin-bottom:20px; }
