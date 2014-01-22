@@ -24,7 +24,7 @@ class User < ActiveRecord::Base
 
   def set_super_admin
   	if User.count == 1
-  		User.first.update_attribute(:super_admin, true)
+  		User.first.update_attribute(:admin, true)
   	else
   		return true
   	end
