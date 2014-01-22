@@ -82,4 +82,14 @@ Skeetersbaseballclub::Application.configure do
 
   # Precompile additional assets
   config.assets.precompile += %w( .svg .eot .woff .ttf )
+
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: "skeetersbaseballclub.org",
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: "aaronjohnsonis", # you can use ordinary gmail username here
+    password: "H0lein0ne"   # you can use your gmail password here, but don't push the changes
+  }
 end
