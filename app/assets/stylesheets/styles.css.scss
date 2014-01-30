@@ -20,6 +20,7 @@ body { background-color:#2f2f2f; }
 
 
 .page-wrap { background:#fff;padding:20px 40px;border:1px solid #ddd; }
+.dashboard-wrap { background:#fff;min-height:700px;padding:20px 40px;}
 
 /*#portal-wrap { background:#242628;padding-top:0px; } */
 #password-wrap { background:#242628; }
@@ -36,7 +37,7 @@ body { background-color:#2f2f2f; }
 .login-pg-text { font-family: 'sonsie_oneregular', cursive;color:#111;font-size:5.0em;text-align:center;margin-bottom:60px;margin-top:50px;text-shadow: 0px 1px 1px #444; }
 
 .landing-page-top { background:#2f2f2f;padding-top:0px;padding-bottom:50px;}
-h1.landing-page { font-family: 'sonsie_oneregular', cursive;color:#111;font-size:4.0em;text-align:center;margin-bottom:30px;margin-top:30px;text-shadow: 0px 1px 1px #555; }
+h1.landing-page { font-family: 'sonsie_oneregular', cursive;color:#111;font-size:4.0em;text-align:center;margin-bottom:30px;margin-top:0px;text-shadow: 0px 1px 1px #555; }
 h3.member-login-text { font-size:2.0em;color:#111;text-shadow: 0px 1px 1px #444;font-weight:bold; }
 .new-password-container { padding-top:30px;margin: 0 auto;}
 h2.forgot-it { padding-top:20px; padding-bottom:20px;font-size:3.0em;color:#111;text-shadow: 0px 1px 1px #444;font-weight:bold;}

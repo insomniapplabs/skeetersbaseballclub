@@ -14,7 +14,7 @@ Skeetersbaseballclub::Application.routes.draw do
 
 
   #resources :posts
-
+  
   get "initial-admin-signup" => 'pages#initial_admin_signup', as: "admin_signup"
   get "team-info" => 'pages#team_info', as: "info"
   get "pages/home"

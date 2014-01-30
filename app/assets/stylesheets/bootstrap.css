@@ -4826,6 +4826,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-dash .dash-brand {
   color: #146FC5;
   text-shadow: 0px 1px 1px #000;
+  font-family: 'sonsie_oneregular', cursive;
   /*text-shadow: 0px 1px 1px #444;*/
 }
 
@@ -5005,8 +5006,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse {
-  background-color: #242628;
-  border-color: #080808;
+  background-color: #2f2f2f;
+  border-color: #2f2f2f;
 }
 
 .navbar-inverse .navbar-brand {

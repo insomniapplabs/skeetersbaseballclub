@@ -21,6 +21,7 @@ class PagesController < ApplicationController
 
   end
 
+
   def team_philosophy
 
   end
