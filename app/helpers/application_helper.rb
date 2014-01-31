@@ -25,4 +25,8 @@ module ApplicationHelper
     @markdown.render(content).html_safe
   end
 
+  def admin_user?
+    user_signed_in? && User.where("admin = ?", true)
+  end
+
 end

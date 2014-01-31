@@ -200,4 +200,7 @@
 </div>
 
 </div>
+<% if admin_user? %>
 
+<%= link_to "Add User", new_user_registration_path, class: "initial-user" %>
+<% end %>
